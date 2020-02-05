@@ -1,0 +1,21 @@
+:root {
+ --size-1-5: 1px;
+ --size-3: 2px;
+}
+
+.default {
+  padding-right: var(--size-1-5);
+  padding-left: var(--size-1-5);
+  justify-content: center;
+  align-self: center;
+  height: var(--size-3);
+  width: var(--size-3);
+}
+
+.btn-expand-folder {
+  content: url("./../../icons/btn-expand-folder.svg");
+}
+
+.btn-collapse-folder {
+  content: url("./../../icons/btn-collapse-folder.svg");
+}
