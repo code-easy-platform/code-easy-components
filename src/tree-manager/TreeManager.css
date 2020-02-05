@@ -1,10 +1,10 @@
 :root {
-  --color-background-col-click: #000;
-  --color-background-col: #000;
-  --size-none: 0px;
-  --size-3: 2px;
-  --size-2: 1px;
+  --color-background-col-click: #313135;
+  --color-background-col: #252527;
   --color-black: #000;
+  --size-none: 0px;
+  --size-3: 12px;
+  --size-2: 8px;
 }
 
 .tree-base {
@@ -17,9 +17,6 @@
   height: min-content;
   cursor: pointer;
   width: 100%;
-}
-.tree-item .item {
-  padding: 5px;
 }
 
 .tree-item:hover {
