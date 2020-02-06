@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { TreeInterface } from '../models/TreeInterface';
-import { TreeItem } from './TreeItem';
+import { TreeItem } from './tree-item/TreeItem';
 
 interface TreeProps {
   item: TreeInterface;

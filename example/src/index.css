@@ -21,3 +21,47 @@
 .App-link {
   color: #09d3ac;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+*:focus {
+  outline: auto;
+}
+
+html,
+body,
+#root,
+.App {
+  font-family: Segoe UI, "Courier New", monospace;
+  background-color: #252527;
+  overflow: hidden;
+  color: white;
+  height: 100vh;
+  display: flex;
+  width: 100vw;
+}
+
+div {
+  display: flex;
+}
+
+a {
+  cursor: pointer;
+  color: blue;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+a:active {
+  color: white;
+  opacity: 0.5;
+}

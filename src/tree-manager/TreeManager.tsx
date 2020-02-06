@@ -3,7 +3,7 @@ import * as React from 'react';
 import { TreeItensTypes } from './shared/models/TreeItensTypes';
 import { TreeInterface } from './shared/models/TreeInterface';
 import { Tree } from './shared/components/Tree';
-import './TreeManager.css';
+import styles from './TreeManager.css';
 
 interface TreeManagerProps {
   itemBase: TreeInterface,
@@ -29,7 +29,7 @@ export class TreeManager extends React.Component<TreeManagerProps> {
 
   render() {
     return (
-      <div className="tree-base">
+      <div className={styles.treeBase}>
         <Tree
           item={{
             itemId: this.itemBase.itemId,

@@ -1,8 +1,9 @@
 import * as React from 'react';
-import { TreeInterface } from '../models/TreeInterface';
+import { TreeInterface } from '../../models/TreeInterface';
 
-import { TreeItensTypes } from '../models/TreeItensTypes';
-import { Icon } from './icon/icon';
+import { TreeItensTypes } from '../../models/TreeItensTypes';
+import { Icon } from '../icon/icon';
+import styles from './TreeItem.css';
 
 interface ItemTreeProps {
     paddingLeft: number,
@@ -20,7 +21,7 @@ export const TreeItem: React.FC<ItemTreeProps> = ({ itemTree, paddingLeft, onSel
 
     return (
         <div
-            className="tree-item"
+            className={styles.treeItem}
             key={itemTree.itemId}
             onContextMenu={onContext}
             id={"tree_" + itemTree.itemId}
