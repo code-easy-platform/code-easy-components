@@ -27,7 +27,7 @@ export const TreeItem: React.FC<ItemTreeProps> = ({ itemTree, paddingLeft, onSel
             id={"tree_" + itemTree.itemId}
             onClick={(e: any) => onSelect(itemTree.itemId, e)}
             onDoubleClick={e => { onDoubleClick(itemTree.itemId, itemTree, e) }}
-            style={{ backgroundColor: (itemTree.isSelected ? "#6060a7;" : "") }}
+            style={{ backgroundColor: (itemTree.isSelected ? "#6060a730" : "") }}
         >
             <div style={{ padding: "5px", paddingLeft: `${paddingLeft}px` }}>
                 {itemTree.itemType === TreeItensTypes.folder &&

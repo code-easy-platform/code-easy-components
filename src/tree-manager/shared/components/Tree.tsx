@@ -28,7 +28,7 @@ export class Tree extends React.Component<TreeProps> {
   }
 
   render() {
-    console.log(this.props.itemIdSelected + "-")
+    this.state.item.isSelected = (this.props.item.itemId === this.props.itemIdSelected);
 
     return (
       <>
