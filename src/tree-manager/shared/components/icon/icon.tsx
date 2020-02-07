@@ -7,9 +7,18 @@ import styles from './icon.css';
  * @param iconName Nome do icone a ser exibido.
  */
 export const Icon = (props: any) => {
+
   let iconName;
-  if (props.iconName === "btn-collapse-folder") iconName = styles.btnCollapseFolder;
-  if (props.iconName === "btn-expand-folder") iconName = styles.btnExpandFolder;
+  if (props.iconName === "collapse") iconName = styles.btnCollapseFolder;
+  if (props.iconName === "expand") iconName = styles.btnExpandFolder;
+
+  /*
+    const [teste, setTeste] = React.useState("");
+    const testando = () => {
+      setTeste("");
+    }
+    onDoubleClickCapture={testando}
+  */
 
   return (
     <div

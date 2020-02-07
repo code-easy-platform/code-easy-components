@@ -11,18 +11,16 @@ interface TreeProps {
   itemIdSelected: string;
 }
 export class Tree extends React.Component<TreeProps> {
-
   private onClick = this.props.onClick;
   private paddingLeft = this.props.paddingLeft;
   private onContextMenu = this.props.onContextMenu;
   private onDoubleClick = this.props.onDoubleClick;
-  private itemIdSelected = this.props.itemIdSelected;
 
   state: any = {
     item: {
       itemId: this.props.item.itemId,
       itemLabel: this.props.item.itemLabel,
-      isSelected: this.props.item.itemId === this.itemIdSelected,
+      isSelected: this.props.item.itemId === this.props.itemIdSelected,
       nodeExpanded: this.props.item.nodeExpanded,
       itemType: this.props.item.itemType,
       itemChilds: this.props.item.itemChilds
@@ -30,6 +28,8 @@ export class Tree extends React.Component<TreeProps> {
   }
 
   render() {
+    console.log(this.props.itemIdSelected + "-")
+
     return (
       <>
         <TreeItem
@@ -49,7 +49,7 @@ export class Tree extends React.Component<TreeProps> {
         />
         {this.state.item.nodeExpanded &&
           this.state.item.itemChilds.map((item: TreeInterface) => {
-            return (<Tree onDoubleClick={this.onDoubleClick} itemIdSelected={this.itemIdSelected} onContextMenu={this.onContextMenu} onClick={this.onClick} paddingLeft={this.paddingLeft + 10} item={item} />);
+            return (<Tree onDoubleClick={this.onDoubleClick} itemIdSelected={this.props.itemIdSelected} onContextMenu={this.onContextMenu} onClick={this.onClick} paddingLeft={this.paddingLeft + 10} item={item} />);
           })}
       </>
     );

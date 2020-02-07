@@ -19,12 +19,16 @@ export class TreeManager extends React.Component<TreeManagerProps> {
   private onDoubleClick = this.props.onDoubleClick;
 
   state = {
-    state: ""
+    itemIdSelected: ""
   }
 
   private onSelect = (id: string, item: TreeInterface, e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    this.setState({ state: id });
+
+    this.state.itemIdSelected = id;
+    this.setState({ itemIdSelected: id });
+
     this.onClick(id, item, e);
+
   }
 
   render() {
@@ -39,11 +43,11 @@ export class TreeManager extends React.Component<TreeManagerProps> {
             isSelected: this.itemBase.isSelected,
             nodeExpanded: this.itemBase.nodeExpanded,
           }}
-          paddingLeft={5}
-          onClick={this.onSelect}
-          itemIdSelected={this.state.state}
+          itemIdSelected={this.state.itemIdSelected}
           onContextMenu={this.onContextMenu}
           onDoubleClick={this.onDoubleClick}
+          onClick={this.onSelect}
+          paddingLeft={5}
         />
         <div style={{ paddingBottom: 100 }} />
       </div>
