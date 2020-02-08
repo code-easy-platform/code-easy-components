@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import { TreeManager, TreeItensTypes } from 'code-easy'
+import { TreeManager, TreeItensTypes } from 'code-easy-components';
 
 
 const itens = [

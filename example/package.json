@@ -1,11 +1,11 @@
 {
-  "name": "code-easy-example",
+  "name": "code-easy-components-example",
   "homepage": "https://lucasdevargassouza.github.io/code-easy",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "code-easy": "link:..",
+    "code-easy-components": "link:..",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
