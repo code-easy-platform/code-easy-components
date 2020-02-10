@@ -1,6 +1,6 @@
 {
   "name": "code-easy-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Components to code easy low platform.",
   "author": "lucasdevargassouza",
   "license": "MIT",
@@ -27,6 +27,7 @@
     "react-dom": "^15.0.0 || ^16.0.0 || ^16.12.0"
   },
   "dependencies": {
+    "prop-types": "^15.5.4",
     "react": "^15.0.0 || ^16.0.0 || ^16.12.0",
     "react-dom": "^15.0.0 || ^16.0.0 || ^16.12.0"
   },
