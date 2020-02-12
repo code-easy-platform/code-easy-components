@@ -5,6 +5,16 @@ import { TreeInterface } from './shared/models/TreeInterface';
 import { Tree } from './shared/components/Tree';
 import styles from './TreeManager.css';
 
+/* const Teste = () => {
+  const [state, setState] = React.useState("Meu teste");
+
+  return (
+    <div onClick={() => setState("Teeeeeessssttaannndo")}>
+      {state}
+    </div>
+  );
+} */
+
 interface TreeManagerProps {
   itemBase: TreeInterface,
   onClick(itemTreeId: string, item: TreeInterface, e: React.MouseEvent<HTMLDivElement, MouseEvent>): void | undefined;
@@ -50,6 +60,7 @@ export class TreeManager extends React.Component<TreeManagerProps> {
           paddingLeft={5}
         />
         <div style={{ paddingBottom: 100 }} />
+        {/* <Teste /> */}
       </div>
     );
   }
