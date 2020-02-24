@@ -1,0 +1,16 @@
+:root {
+  --color-background-col-click: #313135;
+  --color-background-col: #252527;
+  --color-black: #000;
+
+  --size-none: 0px;
+  --size-1-5: 6px;
+  --size-2: 8px;
+  --size-3: 12px;
+}
+
+.treeBase {
+  flex-direction: column;
+  overflow: auto;
+  flex: 1;
+}
