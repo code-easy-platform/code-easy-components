@@ -1,15 +1,15 @@
 {
   "name": "code-easy-components-example",
-  "homepage": "https://lucasdevargassouza.github.io/code-easy",
+  "homepage": "https://lucasdevargassouza.github.io/code-easy-components",
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "code-easy-components": "link:..",
-    "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-scripts": "^3.3.1"
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "^1.1.4",
+    "code-easy-components": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",

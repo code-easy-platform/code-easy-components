@@ -37,5 +37,6 @@ export default {
       rollupCommonJSResolveHack: true,
       clean: true
     }),
+    commonjs()
   ]
 }
