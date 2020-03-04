@@ -64,5 +64,7 @@
       "jest"
     ]
   },
-  "dependencies": {}
+  "dependencies": {
+    "rollup-plugin-postcss": "^2.1.1"
+  }
 }

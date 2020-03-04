@@ -11,6 +11,10 @@ interface TreeManagerProps {
   onDoubleClick(itemTreeId: string, item: TreeInterface, e: React.MouseEvent<HTMLDivElement, MouseEvent>): void | undefined;
   onContextMenu(itemTreeId: string, e: React.MouseEvent<HTMLDivElement, MouseEvent>): void | undefined;
 }
+
+/**
+ * Árvore
+ */
 export class TreeManager extends React.Component<TreeManagerProps> {
 
   private itemBase = this.props.itemBase;
@@ -33,7 +37,7 @@ export class TreeManager extends React.Component<TreeManagerProps> {
 
   render() {
     return (
-      <div style={{ flexDirection: 'column', overflow: 'auto', flex: 1 }}>
+      <div className="treeBase">
         <Tree
           item={{
             itemId: this.itemBase.itemId,

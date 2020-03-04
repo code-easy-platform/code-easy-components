@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './icon.css';
 
 /**
  * @param onClick Uma função como callBack.
@@ -7,22 +8,14 @@ import * as React from 'react';
  */
 export const Icon = (props: any) => {
 
-  let icon;
-  if (props.iconName === "collapse") icon = require("./../../icons/btn-collapse-folder.svg");
-  if (props.iconName === "expand") icon = require("./../../icons/btn-expand-folder.svg");
+  let iconName;
+  if (props.iconName === "collapse") iconName = "btnCollapseFolder";
+  if (props.iconName === "expand") iconName = "btnExpandFolder";
 
 
   return (
     <div
-      style={{
-        width: "var(--size-3)",
-        height: "var(--size-3)",
-        content: icon,
-        paddingRight: "var(--size-1-5)",
-        paddingLeft: "var(--size-1-5)",
-        justifyContent: "center",
-        alignSelf: "center",
-      }}
+      className={"default" + " " + iconName}
       onClick={props.onClick}
       onDoubleClick={props.onDoubleClick}
     />
