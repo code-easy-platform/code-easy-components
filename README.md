@@ -1,36 +1,26 @@
-# code-easy-components
+# my-components
 
-> Components to code easy low platform.
-
-[![NPM](https://img.shields.io/npm/v/code-easy.svg)](https://www.npmjs.com/package/code-easy-components) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-
-## Install
-
-```bash
-npm install --save code-easy-components
-```
+This is a template repo. just clone it, export it and rename to set your own component library module name.
 
 ## Usage
 
-```tsx
-import * as React from 'react'
-
-import TreeManager from 'code-easy-components'
-
-class Example extends React.Component {
-  render () {
-    return (
-      <TreeManager
-        onClick={(id) => { /* alert(id)  */ }}
-        itemBase={{ itemId: "0", itemLabel: "Item 01", isSelected: false, itemChilds: [], itemType: TreeItensTypes.folder, nodeExpanded: false }}
-        onContextMenu={(itemId, e) => { e.preventDefault() }}
-        onDoubleClick={(itemId, item, e) => { alert(itemId) }}
-      />
-    )
-  }
-}
+To install dependencies
+``` 
+$ yarn install
 ```
 
-## License
+To build
+```
+$ yarn build 
+```
 
-MIT © [lucasdevargassouza](https://github.com/lucasdevargassouza)
+To run tests
+```
+$ yarn test
+```
+
+To run Storybook
+``` 
+$ yarn storybook
+```
+
