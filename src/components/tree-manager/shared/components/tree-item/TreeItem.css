@@ -5,7 +5,7 @@
 }
 
 .treeItem:hover {
-  background-color: #3c3c3c3b;
+  background-color: var(--color-background-hover-click);
 }
 
 .treeItem:active {

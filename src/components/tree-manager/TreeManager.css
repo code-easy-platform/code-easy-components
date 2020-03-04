@@ -1,7 +1,9 @@
 :root {
-  --color-background-col-click: #313135;
-  --color-background-col: #252527;
-  --color-black: #000;
+  --color-background-col-click: #00000050;
+  --color-background-hover-click: #00000030;
+  --color-background-selected-click: #00000020;
+  --color-background-col: #000000;
+  --color-black: #000000;
 
   --size-none: 0px;
   --size-1-5: 6px;
