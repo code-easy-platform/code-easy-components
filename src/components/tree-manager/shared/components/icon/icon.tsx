@@ -12,7 +12,6 @@ export const Icon = (props: any) => {
   if (props.iconName === "collapse") iconName = "btnCollapseFolder";
   if (props.iconName === "expand") iconName = "btnExpandFolder";
 
-
   return (
     <div
       className={"default" + " " + iconName}
