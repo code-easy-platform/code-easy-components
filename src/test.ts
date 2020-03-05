@@ -1,7 +1,7 @@
-import ExampleComponent from './'
+import { TreeManager } from './'
 
 describe('ExampleComponent', () => {
   it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+    expect(TreeManager).toBeTruthy()
   })
 })

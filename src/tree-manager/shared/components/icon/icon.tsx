@@ -10,15 +10,7 @@ export const Icon = (props: any) => {
 
   let iconName;
   if (props.iconName === "collapse") iconName = styles.btnCollapseFolder;
-  if (props.iconName === "expand") iconName = styles.btnExpandFolder;
-
-  /*
-    const [teste, setTeste] = React.useState("");
-    const testando = () => {
-      setTeste("");
-    }
-    onDoubleClickCapture={testando}
-  */
+  else if (props.iconName === "expand") iconName = styles.btnExpandFolder;
 
   return (
     <div
@@ -27,4 +19,5 @@ export const Icon = (props: any) => {
       className={styles.default + " " + iconName}
     />
   );
+
 }
