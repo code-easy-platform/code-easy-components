@@ -3,7 +3,7 @@ import { TreeInterface } from '../../models/TreeInterface';
 
 import { TreeItensTypes } from '../../models/TreeItensTypes';
 import { Icon } from '../icon/icon';
-import './TreeItem.css';
+import styles from './TreeItem.css';
 
 interface ItemTreeProps {
     paddingLeft: number,
@@ -21,15 +21,15 @@ export const TreeItem: React.FC<ItemTreeProps> = ({ itemTree, paddingLeft, onSel
 
     return (
         <div
-            className="treeItem"
+            className={styles.treeItem}
             key={itemTree.itemId}
             onContextMenu={onContext}
             id={"tree_" + itemTree.itemId}
             onClick={(e: any) => onSelect(itemTree.itemId, e)}
             onDoubleClick={e => { onDoubleClick(itemTree.itemId, itemTree, e) }}
-            style={{ backgroundColor: (itemTree.isSelected ? "var(--color-background-selected-click)" : "") }}
+            style={{ backgroundColor: (itemTree.isSelected ? "#6060a730" : "") }}
         >
-            <div style={{ padding: "5px", paddingLeft: `${paddingLeft}px`, display: "flex" }}>
+            <div style={{ padding: "5px", paddingLeft: `${paddingLeft}px` }}>
                 {itemTree.itemType === TreeItensTypes.folder &&
                     <Icon iconName={itemTree.nodeExpanded ? "collapse" : "expand"} />
                 }
