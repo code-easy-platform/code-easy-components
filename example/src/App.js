@@ -2,6 +2,7 @@ import React from 'react'
 
 import 'code-easy-components/dist/index.css';
 import {
+  IconMoreInfo,
   IconFolder, IconDownload, IconAction, IconInputParam, IconRouter, IconOutpuParam, IconLocalParam, IconAccont,
   IconComplete, IconConfig, IconError, IconHelp, IconImport, IconInfo, IconMinimize, IconOpenGithub, IconPlugins,
   IconMaximize, IconMenu, IconMenuUser, IconPlay, IconPluginsTab, IconPropertiesTab, IconRestart, IconStop, Hello,
@@ -33,6 +34,7 @@ const App = () => {
       <img style={{ margin: 5 }} width={20} height={20} src={IconOpenGithub} alt="" />
       <img style={{ margin: 5 }} width={20} height={20} src={IconPluginsTab} alt="" />
       <img style={{ margin: 5 }} width={20} height={20} src={IconEditorTab} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconMoreInfo} alt="" />
       <img style={{ margin: 5 }} width={20} height={20} src={IconMaximize} alt="" />
       <img style={{ margin: 5 }} width={20} height={20} src={IconComplete} alt="" />
       <img style={{ margin: 5 }} width={20} height={20} src={IconDownload} alt="" />
