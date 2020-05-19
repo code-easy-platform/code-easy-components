@@ -1,35 +1,65 @@
-import React, { Component } from 'react';
+import React from 'react'
 
-import { TreeManager, TreeItensTypes } from 'code-easy-components';
-import { itensMock } from './mock';
+import 'code-easy-components/dist/index.css';
+import {
+  IconFolder, IconDownload, IconAction, IconInputParam, IconRouter, IconOutpuParam, IconLocalParam, IconAccont,
+  IconComplete, IconConfig, IconError, IconHelp, IconImport, IconInfo, IconMinimize, IconOpenGithub, IconPlugins,
+  IconMaximize, IconMenu, IconMenuUser, IconPlay, IconPluginsTab, IconPropertiesTab, IconRestart, IconStop, Hello,
+  IconStar, IconTips, IconTrash, IconWarning, IconBuild, IconClose, IconCollapsedFolder, IconEditorTab, IconExpandedFolder,
+  IconFlowAction, IconFlowAssign, IconFlowComment, IconFlowEnd, IconFlowForeach, IconFlowIf, IconFlowStart, IconFlowSwitch,
+} from 'code-easy-components';
 
-
-
-export default class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div style={{ justifyContent: "center", flex: 1, display: "flex", }}>
-          <div style={{ width: 300, height: 500, alignSelf: "center", backgroundColor: "#1E1E1E", flexDirection: "column" }}>
-
-            <TreeManager
-              onContextMenu={(itemId, e) => e.preventDefault()}
-              onDoubleClick={() => { }}
-              onClick={() => { }}
-              itemBase={{
-                itemId: '0',
-                isSelected: false,
-                nodeExpanded: false,
-                itemChilds: itensMock,
-                itemLabel: "Meu item base",
-                itemType: TreeItensTypes.file,
-              }}
-            />
-
-          </div>
-        </div>
+const App = () => {
+  return <div>
+    <Hello />
+    <div style={{ margin: 100, padding: 20, backgroundColor: '#1e1e1e' }}>
+      <header style={{ color: 'white' }}>Icons</header>
+      <div>
+        <img style={{ margin: 5 }} width={20} height={20} src={IconFlowComment} alt="" />
+        <img style={{ margin: 5 }} width={20} height={20} src={IconFlowForeach} alt="" />
+        <img style={{ margin: 5 }} width={20} height={20} src={IconFlowAction} alt="" />
+        <img style={{ margin: 5 }} width={20} height={20} src={IconFlowAssign} alt="" />
+        <img style={{ margin: 5 }} width={20} height={20} src={IconFlowSwitch} alt="" />
+        <img style={{ margin: 5 }} width={20} height={20} src={IconFlowStart} alt="" />
+        <img style={{ margin: 5 }} width={20} height={20} src={IconFlowEnd} alt="" />
+        <img style={{ margin: 5 }} width={20} height={20} src={IconFlowIf} alt="" />
       </div>
-    )
-  }
+      <img style={{ margin: 5 }} width={20} height={20} src={IconCollapsedFolder} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconExpandedFolder} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconPropertiesTab} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconLocalParam} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconInputParam} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconOutpuParam} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconOpenGithub} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconPluginsTab} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconEditorTab} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconMaximize} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconComplete} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconDownload} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconMinimize} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconMenuUser} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconRestart} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconPlugins} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconWarning} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconRouter} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconAction} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconAccont} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconFolder} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconConfig} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconImport} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconError} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconBuild} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconTrash} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconClose} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconHelp} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconInfo} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconStar} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconTips} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconMenu} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconPlay} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconStop} alt="" />
+    </div>
+  </div>
 }
 
+export default App
