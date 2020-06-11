@@ -23,6 +23,9 @@
     "predeploy": "cd example && yarn install && yarn run build",
     "deploy": "gh-pages -d example/build"
   },
+  "dependencies": {
+    "uuid": "^8.0.0"
+  },
   "peerDependencies": {
     "react": "^16.0.0",
     "uuid": "^8.0.0"

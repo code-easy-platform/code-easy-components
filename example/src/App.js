@@ -1,18 +1,16 @@
-import React from 'react'
+import React, { useRef } from 'react'
 
 import 'code-easy-components/dist/index.css';
 import {
-  IconMoreInfo,
-  IconFolder, IconDownload, IconAction, IconInputParam, IconRouter, IconOutpuParam, IconLocalParam, IconAccont,
-  IconComplete, IconConfig, IconError, IconHelp, IconImport, IconInfo, IconMinimize, IconOpenGithub, IconPlugins,
-  IconMaximize, IconMenu, IconMenuUser, IconPlay, IconPluginsTab, IconPropertiesTab, IconRestart, IconStop, Hello,
+  IconComplete, IconConfig, IconHelp, IconImport, IconInfo, IconMinimize, IconOpenGithub, IconPlugins, InputViewOnly,
+  IconMoreInfo, IconMaximize, IconMenu, IconMenuUser, IconPlay, IconPluginsTab, IconPropertiesTab, IconRestart, IconStop,
+  IconFolder, IconDownload, IconAction, IconInputParam, IconRouter, IconOutpuParam, IconLocalParam, IconAccont, IconError,
   IconStar, IconTips, IconTrash, IconWarning, IconBuild, IconClose, IconCollapsedFolder, IconEditorTab, IconExpandedFolder,
   IconFlowAction, IconFlowAssign, IconFlowComment, IconFlowEnd, IconFlowForeach, IconFlowIf, IconFlowStart, IconFlowSwitch,
 } from 'code-easy-components';
 
 const App = () => {
   return <div>
-    <Hello />
     <div style={{ margin: 100, padding: 20, backgroundColor: '#1e1e1e' }}>
       <header style={{ color: 'white' }}>Icons</header>
       <div>
@@ -61,7 +59,27 @@ const App = () => {
       <img style={{ margin: 5 }} width={20} height={20} src={IconPlay} alt="" />
       <img style={{ margin: 5 }} width={20} height={20} src={IconStop} alt="" />
     </div>
+    <div style={{ margin: 100, padding: 20, backgroundColor: '#1e1e1e', color: 'white' }}>
+      <header style={{ color: 'white' }}>Inputs</header>
+      <br />
+      <div style={{ width: '-webkit-fill-available', padding: 20, boxShadow: '0 0 4px black' }}>
+        <InputViewOnly
+          label="Label da minha input"
+          value="Valor da minha input"
+          information="Valor da minha information"
+          infoIcon={IconHelp}
+        />
+        <br />
+        <InputViewOnly
+          label="Label da minha input"
+          value="Valor da minha input"
+          information="Valor da minha information"
+          infoIcon={IconHelp}
+          infoIconRef={useRef(null)}
+        />
+      </div>
+    </div>
   </div>
 }
 
-export default App
+export default App;
