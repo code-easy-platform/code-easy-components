@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useState } from 'react'
 
 import 'code-easy-components/dist/index.css';
 import {
@@ -10,6 +10,7 @@ import {
 } from 'code-easy-components';
 
 const App = () => {
+  const [inputWidth, setInputWidth] = useState(60);
   return <div>
     <div style={{ margin: 100, padding: 20, backgroundColor: '#1e1e1e' }}>
       <header style={{ color: 'white' }}>Icons</header>
@@ -62,21 +63,16 @@ const App = () => {
     <div style={{ margin: 100, padding: 20, backgroundColor: '#1e1e1e', color: 'white' }}>
       <header style={{ color: 'white' }}>Inputs</header>
       <br />
-      <div style={{ width: '-webkit-fill-available', padding: 20, boxShadow: '0 0 4px black' }}>
+      <div style={{ width: 300, padding: 20, boxShadow: '0 0 4px black' }}>
         <InputViewOnly
-          label="Label da minha input"
-          value="Valor da minha input"
-          information="Valor da minha information"
+          label={"Label"}
           infoIcon={IconHelp}
+          inputWidth={inputWidth}
+          onChangeInputWidth={newWidth => setInputWidth(newWidth)}
+          value={"Valor da minha input"}
+          information={"Valor da minha information"}
         />
         <br />
-        <InputViewOnly
-          label="Label da minha input"
-          value="Valor da minha input"
-          information="Valor da minha information"
-          infoIcon={IconHelp}
-          infoIconRef={useRef(null)}
-        />
       </div>
     </div>
   </div>

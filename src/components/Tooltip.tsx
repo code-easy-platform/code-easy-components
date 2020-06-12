@@ -20,20 +20,18 @@ export const Tooltip: React.FC<TooltipProps> = ({ description, elementRef }) => 
 
   return (
     <div
-      className="absolute padding-s background-info box-shadow-small flex-column border-radius"
       style={{
         boxShadow: 'black 0px 0px 4px',
         transform: 'translateY(70%)',
+        backgroundColor: '#414141',
         flexDirection: 'column',
         position: "absolute",
         borderRadius: 5,
         minWidth: 100,
         maxWidth: 250,
         zIndex: 5000,
-        padding: 4,
+        padding: 8,
       }}
-    >
-      {description}
-    </div>
+    >{description}</div>
   );
 }
