@@ -6,7 +6,7 @@ import {
   IconMoreInfo, IconMaximize, IconMenu, IconMenuUser, IconPlay, IconPluginsTab, IconPropertiesTab, IconRestart, IconStop,
   IconFolder, IconDownload, IconAction, IconInputParam, IconRouter, IconOutpuParam, IconLocalParam, IconAccont, IconError,
   IconStar, IconTips, IconTrash, IconWarning, IconBuild, IconClose, IconCollapsedFolder, IconEditorTab, IconExpandedFolder,
-  IconFlowAction, IconFlowAssign, IconFlowComment, IconFlowEnd, IconFlowForeach, IconFlowIf, IconFlowStart, IconFlowSwitch,
+  IconFlowAction, IconFlowAssign, IconFlowComment, IconFlowEnd, IconFlowForeach, IconFlowIf, IconFlowStart, IconFlowSwitch, IconRouterConsume, IconRouterExpose,
 } from 'code-easy-components';
 
 const App = () => {
@@ -27,6 +27,8 @@ const App = () => {
       <img style={{ margin: 5 }} width={20} height={20} src={IconCollapsedFolder} alt="" />
       <img style={{ margin: 5 }} width={20} height={20} src={IconExpandedFolder} alt="" />
       <img style={{ margin: 5 }} width={20} height={20} src={IconPropertiesTab} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconRouterConsume} alt="" />
+      <img style={{ margin: 5 }} width={20} height={20} src={IconRouterExpose} alt="" />
       <img style={{ margin: 5 }} width={20} height={20} src={IconLocalParam} alt="" />
       <img style={{ margin: 5 }} width={20} height={20} src={IconInputParam} alt="" />
       <img style={{ margin: 5 }} width={20} height={20} src={IconOutpuParam} alt="" />
