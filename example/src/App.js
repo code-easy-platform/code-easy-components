@@ -3,10 +3,10 @@ import React, { useState } from 'react'
 import 'code-easy-components/dist/index.css';
 import {
   IconComplete, IconConfig, IconHelp, IconImport, IconInfo, IconMinimize, IconOpenGithub, IconPlugins, InputViewOnly,
-  IconMoreInfo, IconMaximize, IconMenu, IconMenuUser, IconPlay, IconPluginsTab, IconPropertiesTab, IconRestart, IconStop,
-  IconFolder, IconDownload, IconAction, IconInputParam, IconRouter, IconOutpuParam, IconLocalParam, IconAccont, IconError,
-  IconStar, IconTips, IconTrash, IconWarning, IconBuild, IconClose, IconCollapsedFolder, IconEditorTab, IconExpandedFolder,
-  IconFlowAction, IconFlowAssign, IconFlowComment, IconFlowEnd, IconFlowForeach, IconFlowIf, IconFlowStart, IconFlowSwitch, IconRouterConsume, IconRouterExpose,
+  IconFolder, IconDownload, IconAction, IconInputParam, IconRouter, IconOutpuParam, IconLocalParam, IconAccont, IconError, useAngle,
+  IconMoreInfo, IconMaximize, IconMenu, IconMenuUser, IconPlay, IconPluginsTab, IconPropertiesTab, IconRestart, IconStop, useHypotenuse,
+  IconFlowAction, IconFlowAssign, IconFlowComment, IconFlowEnd, IconFlowForeach, IconFlowIf, IconFlowStart, IconFlowSwitch, IconRouterExpose,
+  IconStar, IconTips, IconTrash, IconWarning, IconBuild, IconClose, IconCollapsedFolder, IconEditorTab, IconExpandedFolder, IconRouterConsume,
 } from 'code-easy-components';
 
 const App = () => {
@@ -75,6 +75,24 @@ const App = () => {
           information={"Valor da minha information"}
         />
         <br />
+      </div>
+    </div>
+    <div style={{ margin: 100, padding: 20, backgroundColor: '#1e1e1e', color: 'white' }}>
+      <header style={{ color: 'white' }}>React hooks</header>
+      <br />
+      <div>
+        <b>Angle</b><br />
+        X1: 100<br />
+        Y1: 100<br />
+        X2: 200<br />
+        Y2: 200<br />
+        Angle: {useAngle(100, 100, 200, 200)}
+        <br />
+        <br />
+        <b>Hypotenuse</b><br />
+        height: 100<br />
+        width: 200<br />
+        Angle: {useHypotenuse(100, 200)}
       </div>
     </div>
   </div>
