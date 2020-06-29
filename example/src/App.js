@@ -92,7 +92,7 @@ const App = () => {
         <b>Hypotenuse</b><br />
         height: 100<br />
         width: 200<br />
-        Angle: {useHypotenuse(100, 200)}
+        Hypotenuse: {useHypotenuse(100, 200)}
       </div>
     </div>
   </div>
