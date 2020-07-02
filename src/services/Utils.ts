@@ -37,7 +37,7 @@ export class Utils {
 
   /** Validate a string with no special characters, spaces, and line breaks */
   public static isValidName(name: string) {
-    return !(/^(?! )((?! {2})(?<! )$[a-zA-Z ]){3,50}$/.test(name));
+    return !((/^(@[a-z0-9-~][a-z0-9-._~]*\/)?[a-z0-9-~][a-z0-9-._~]*$/).test(name));
   }
 
   /** Validate a version field like this "0.0.1" */
