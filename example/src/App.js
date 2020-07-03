@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 import 'code-easy-components/dist/index.css';
 import {
-  IconComplete, IconConfig, IconHelp, IconImport, IconInfo, IconMinimize, IconOpenGithub, IconPlugins, InputViewOnly,
+  IconComplete, IconConfig, IconHelp, IconImport, IconInfo, IconMinimize, IconOpenGithub, IconPlugins, InputViewOnly, useSizeByText,
   IconFolder, IconDownload, IconAction, IconInputParam, IconRouter, IconOutpuParam, IconLocalParam, IconAccont, IconError, useAngle,
   IconMoreInfo, IconMaximize, IconMenu, IconMenuUser, IconPlay, IconPluginsTab, IconPropertiesTab, IconRestart, IconStop, useHypotenuse,
   IconFlowAction, IconFlowAssign, IconFlowComment, IconFlowEnd, IconFlowForeach, IconFlowIf, IconFlowStart, IconFlowSwitch, IconRouterExpose,
@@ -92,7 +92,11 @@ const App = () => {
         <b>Hypotenuse</b><br />
         height: 100<br />
         width: 200<br />
-        Hypotenuse: {useHypotenuse(100, 200)}
+        Hypotenuse: {useHypotenuse(100, 200)}<br /><br />
+        <b>Sizes(width e height) by text</b><br />
+        Text: "My test \n\n\n\n text"<br />
+        height: {useSizeByText("My test \n\n\n\n text").height}<br />
+        width: {useSizeByText("My test \n\n\n\n text").width}<br />
       </div>
     </div>
   </div>
